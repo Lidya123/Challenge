@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link href="C:\Users\Asus\Desktop\Lidya Simon Sem5\webdevelop\new_pro\challenge1.css" rel="stylesheet" type="text/css">    
+    <title>Document</title>
+</head>
+<body>
+    <div  class="container1">
+    <div id='title'>
+        <h1>Challenge 1: Your Age in Days</h1>
+    </div>
+    <div class="flex-box-container1" id="btn">
+        <button onclick="ageInDays()" class="btn btn-primary" id='button1'>
+            click me
+      </button>
+        &nbsp; &nbsp;
+        <button onclick="reset()" class="btn btn-danger"  id='button2'>
+            reset
+     </button>
+    </div>
+    <div class="flex-box-container1">
+        <div id="flex-box-result">
+        </div>
+    </div>
+    
+</div>
+
+   <div class="container2">
+       <h1>Challenge 2: Cat Generator </h1>
+       <button class='btn btn-success' onclick="catgenerator()"> Generate cat </button>
+
+       <div class='flex-box-container2' id='flex-box-2'>
+           
+       </div>
+   </div>
+
+   <div class="container3">
+        <h1>Challenge 3: Stone, Paper, Scissors</h1>
+        <div class="flex-box-container3" id="flex-box-container3-div">
+            <img id="rock" src="https://cdn2.vectorstock.com/i/1000x1000/79/16/cartoon-gray-stone-vector-21267916.jpg" width="150" height="150" onclick= "rpsGame(this)">
+            <img id="paper" src="https://media.istockphoto.com/vectors/cartoon-blank-piece-of-paper-vector-id1190524331" width="150" height="150" onclick= "rpsGame(this)">
+            <img id="scissors" src="https://image.shutterstock.com/image-vector/amazing-isolated-scissor-on-white-260nw-1544669714.jpg" width="150" height="150" onclick= "rpsGame(this)">
+
+        </div>
+   </div>
+  
+   <div class="container4">
+        <h1 id="change-color">Challenge 4: Change the colors of the button</h1>
+        <div class="flex-box-container4" id="flex-box-change-clr">;
+            <form action="">
+                <select name="backcolor" id="backgroundclr" onchange="changecolor(this)">
+                    <option value="random" >Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Google</button>
+            <button class="btn btn-danger">Instagram</button>
+            <button class="btn btn-success">FaceBook</button>
+            <button class="btn btn-warning">Twiitter</button>
+        </div>
+   </div>
+
+<div class="container5">
+    <h2> Challenge 5: BlackJack </h2>
+    <h3><span>Lets PLay</span></h3> 
+    <div clsss="flex-blackjack-row1">
+        <div class="flex-blckjack-your-score" id="flex-blackjack-your-score-id">
+            <h2>You Won: <span>0</span></h2>
+        </div>
+        <div class="flex-blckjack-dealer-score" id="flex-blackjack-dealer-score-id">
+            <h2>You Lose: <span>0</span></h2>
+        </div>
+    </div>
+
+    <div class="flex-blackjack-row2">
+        <div class="flex-blackjack-result-buttons">
+            <button class="btn btn-primary">Hit</button>
+            <button class="btn btn-warning">Stand</button>
+            <button class="btn btn-danger">Deal</button>
+        </div>
+    </div>
+
+    <div class="flex-blackjack-row3">
+        <table>
+            <tr>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Draws</th>
+            </tr>
+            <tr>
+                <td><span id="wins">0</span></td>
+                <td><span id="stand">0</span></td>
+                <td><span id="deal">0</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+    <script src="challenge1.js">
+
+    </script>
+</body>
+</html>
